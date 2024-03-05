@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export const DBconnect = async () => {
     try {
-        await mongoose.connect('mongodb+srv://<usuario>:<contraseña>@<cluster>.mongodb.net/<db>?retryWrites=true&w=majority', {
+        await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
