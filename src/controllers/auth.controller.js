@@ -55,7 +55,6 @@ export const login = async (req, res) => {
       createdAt: userFound.createdAt,
       updatedAt: userFound.updatedAt,
     });
-    res.send("registrando");
   } catch (error) {
     res.status(500).json({ messsage: error.message });
   }
