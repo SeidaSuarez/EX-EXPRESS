@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useTasks } from "../context/taskContext";
 import { Link } from "react-router-dom";
 

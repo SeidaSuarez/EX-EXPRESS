@@ -41,6 +41,7 @@ function TaskFormPage() {
     });
 
     return (
+      
         <div className="flex h-[calc(100vh-100px)] items-center justify-center">
             <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
                 <form onSubmit={onSubmit}>
@@ -58,7 +59,7 @@ function TaskFormPage() {
                         className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
                     ></textarea>
 
-                    <label htmlFor="date">Fecha</label>
+                    <label htmlFor="date" className="text-white">Fecha</label>
                     <input type="date" {...register('date')}
                         className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
                     />
